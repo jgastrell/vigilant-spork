@@ -146,7 +146,7 @@ class SessionList extends Component {
                         <div className="col-sm">
                         <button
                             className="btn btn-outline-danger btn-sm d-inline" 
-                            onClick={() => this.deleteSessionOrReview(tastingSession.id, DELETE_SESSION, SESSIONS)}>{'-'}
+                            onClick={() => this.deleteSessionOrReview(tastingSession.id, DELETE_SESSION, SESSIONS)}>{'Delete Session'}
                           </button>
                         </div>
                       </div>
@@ -164,7 +164,7 @@ class SessionList extends Component {
                               <button 
                                 key={`${wine.id}-btn`} 
                                 className="btn btn-outline-danger btn-sm d-inline"
-                                onClick={() => {this.deleteWineOrTasterFromSession(tastingSession,wine.id)}}>{'-'}
+                                onClick={() => {this.deleteWineOrTasterFromSession(tastingSession,wine.id)}}>{'Delete Wine'}
                               </button>
                             </div>
                           </div>
@@ -184,7 +184,7 @@ class SessionList extends Component {
                               <button 
                                 key={`${wineTaster.id}-btn`} 
                                 className="btn btn-outline-danger btn-sm d-inline"
-                                onClick={() => {this.deleteWineOrTasterFromSession(tastingSession,null,wineTaster.id)}}>{'-'}
+                                onClick={() => {this.deleteWineOrTasterFromSession(tastingSession,null,wineTaster.id)}}>{'Delete Taster'}
                               </button>
                             </div>
                           </div>
